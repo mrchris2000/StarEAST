@@ -35,5 +35,15 @@
 	<classpathentry kind="lib" path="D:/Projects/commons-lang3-3.0.jar"/>
 	<classpathentry kind="lib" path="D:/Projects/commons-io-2.6.jar"/>
 	<classpathentry kind="lib" path="D:/Projects/commons-validator-1.6.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/IBM/IMShared/plugins/com.ibm.rational.test.lt.codegen.core_7.3.800.v20190309_1012/libraries/httpclient-4.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/IBM/IMShared/plugins/com.ibm.rational.test.lt.codegen.core_7.3.800.v20190309_1012/libraries/httpcore-4.4.10.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/IBM/IMShared/plugins/com.ibm.rational.test.lt.codegen.core_7.3.800.v20190309_1012/libraries/httpmime-4.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/IBM/IMShared/plugins/com.ibm.rational.test.lt.codegen.core_7.3.800.v20190309_1012/libraries/slf4j-simple-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/c_hag/HCL/hclproducts/workspace2/zippedExtLibs/x64_geckodriver_0_18.zip"/>
+	<classpathentry kind="lib" path="C:/Users/c_hag/HCL/hclproducts/workspace2/zippedExtLibs/x64_geckodriver_0_21.zip"/>
+	<classpathentry kind="lib" path="C:/Users/c_hag/HCL/hclproducts/workspace2/zippedExtLibs/linux_geckodriver_0_21.zip"/>
+	<classpathentry kind="lib" path="C:/Users/c_hag/HCL/hclproducts/workspace2/zippedExtLibs/linux_x64_geckodriver_0_21.zip"/>
+	<classpathentry kind="lib" path="C:/Users/c_hag/HCL/hclproducts/workspace2/zippedExtLibs/mac_geckodriver_0_18.zip"/>
+	<classpathentry kind="lib" path="C:/Users/c_hag/HCL/hclproducts/workspace2/zippedExtLibs/mac_geckodriver_0_21.zip"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
