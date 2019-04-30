@@ -1,0 +1,5 @@
+grouping,cardType,newReservationNumber
+1,maestro,A00008
+2,visa,A00009
+3,americanexpress,A00010
+4,ibm,A00011

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1537958193818" createdUser="c_hag" id="78b31c28:166154bad7e:-7d4a" type="test_resource" updatedTimestamp="1538037048846" updatedUser="c_hag" version="1.1">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig description="" name="">
+      <testTree>
+         <editableResource id="78b31c28:166154bad7e:-7d05" selfDescribing="The SQL Query action is used for executing an SQL SELECT statement against the selected database connection. Query results may be validated or stored using the Assert and Store tabs; sample result sets may be configured by running the query using the Test button." type="sql_query_action" version="1.0">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig assertCellResults="true" assertColumnResults="false" callableStatement="false" description="" interval="0" name="&quot;select RESERVATION_NUMBER from RESERVATION where FIRST_NAME='%%firstname%%' and LAST_NAME='%%lastname%%' ORDER BY RESERVATION_NUMBER DESC LIMIT 1&quot;, Cell assertions disabled" repeat="false" sqlStatement="select RESERVATION_NUMBER from RESERVATION where FIRST_NAME='%%firstname%%' and LAST_NAME='%%lastname%%' ORDER BY RESERVATION_NUMBER DESC LIMIT 1" timeOffset="0" timeout="0" validateTypes="false">
+               <dbserverid id="1b5ae254:1353467bacf:-7ec8" lkname="Bookings Database" lkpath="WWTravel Bookings System/Bookings Database" type="infrastructure_component_resource"/>
+               <dataModel>
+                  <_c columnName="RESERVATION_NUMBER" columnType="7">
+                     <columnData name="RESERVATION_NUMBER" type="7" version="1.2"/>
+                     <_c type="7" version="1.2">
+                        <fieldActionGroup>
+                           <fieldAction enabled="false" type="1">
+                              <fieldAction enabled="false" exp="A00001" type="0"/>
+                           </fieldAction>
+                           <fieldAction description="Store copy of field in tag 'newTag'" tN="reservationNumber" type="2">
+                              <dataAction type="Copy"/>
+                           </fieldAction>
+                        </fieldActionGroup>
+                     </_c>
+                  </_c>
+               </dataModel>
+            </resourceConfig>
+         </editableResource>
+         <editableResource id="-70437da:1661a12c977:-7e22" selfDescribing="The log actions enables you to output messages to console and a logging file." type="logging_action" version="1.0">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig append="true" description="" flush="true" loggingMessage="Searched for: %%firstname%% %%lastname%%&#13;&#10;ResNum: %%reservationNumber%%&#13;&#10;---&#13;&#10;" name="Searched for: %%firstname%% %%lastname%%" outputFile="c:\temp\output.txt" role="0"/>
+         </editableResource>
+      </testTree>
+      <tagDataStore inputMode="SELECT" outputMode="SELECT">
+         <tag defaultValue="" description="" name="firstname">
+            <tagProps>
+               <prop key="interfaceInput" value="true"/>
+            </tagProps>
+         </tag>
+         <tag defaultValue="" description="" name="lastname">
+            <tagProps>
+               <prop key="interfaceInput" value="true"/>
+            </tagProps>
+         </tag>
+         <tag defaultValue="" description="" name="reservationNumber">
+            <tagProps>
+               <prop key="interfaceOutput" value="true"/>
+            </tagProps>
+         </tag>
+      </tagDataStore>
+      <testprops messageClearance="false"/>
+   </resourceConfig>
+</editableResource>

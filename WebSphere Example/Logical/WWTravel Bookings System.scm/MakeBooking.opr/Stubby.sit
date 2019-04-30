@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1547648595394" createdUser="c_hag" id="-9d54d3e:16856df5b2c:-79b8" type="simple_test_data" updatedTimestamp="1547648595394" updatedUser="c_hag" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig autoMapColumns="true" columnCount="" datasourceType="Delimited" enc="UTF-8" escapeQuotedString="true" hasColumnNamesLine="true" linesBeforeColumnNames="0" location="%%PROJECT/ROOT_DIRECTORY%%/Logical/WWTravel Bookings System.scm/MakeBooking.opr/Stubby.csv" loop="false" parsingType="OffsetLength" separator="," treatEmptyStringAsNull="false" treatTextAsEmpty="false" treatTextAsEmptyValue="" treatTextAsNull="true" treatTextAsNullValue="NULL" trim="false"/>
+</editableResource>

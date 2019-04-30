@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1547647194262" createdUser="c_hag" id="-9d54d3e:16856df5b2c:-7dc4" type="env_task_resource" updatedTimestamp="1547647204816" updatedUser="c_hag" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig description="" name="">
+      <taskTree>
+         <editableResource id="-9d54d3e:16856df5b2c:-7d86" selfDescribing="The SQL Command action is used for executing the Data Manipulation Language statements INSERT, UPDATE, and DELETE against the selected database connection. If desired, the number of rows affected may be validated or stored into a tag." type="sql_command_action" version="1.0">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig callableStatement="false" description="" isAutoCommit="true" name="-NO SQL STATEMENT DEFINED-" sqlStatement="" timeOffset="0"/>
+         </editableResource>
+      </taskTree>
+      <tagDataStore inputMode="NONE" outputMode="NONE"/>
+   </resourceConfig>
+</editableResource>

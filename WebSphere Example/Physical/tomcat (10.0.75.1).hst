@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1556648940452" createdUser="c_hag" id="24a0fbc5:16a6f81c3fa:-7e60" selfDescribing="tomcat (10.0.75.1)" type="host_machine_resource" updatedTimestamp="1556648940452" updatedUser="c_hag" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig host_address="10.0.75.1" user_host_name="tomcat">
+      <roles>
+         <identity name="ssh" port="22"/>
+      </roles>
+   </resourceConfig>
+</editableResource>

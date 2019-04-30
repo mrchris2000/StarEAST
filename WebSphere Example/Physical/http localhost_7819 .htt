@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1542128742021" createdUser="c_hag" id="6df487df:1670c4fbcc9:-79b1:-956750865:1544155186" selfDescribing="http localhost:7819 " type="http_transport" updatedTimestamp="1542128742021" updatedUser="c_hag" version="1.0">
+   <syncdetails compare="PHYSICALHTTPlocalhost:7819" lastSynced="1542128742021" sourceid="6df487df:1670c4fbcc9:-79b1">
+      <sourcepath path="HTTP"/>
+      <sourcepath path="localhost:7819"/>
+   </syncdetails>
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig transportName="" transportTemplateName="HTTP">
+      <messageProperties ReasonPhrase="No Stub available that matches the request" clientConnectionsPerHost="100" credDomain="" credPassword="#com.ghc.1!a0e2" credPreemptive="false" credType="0" credUser="" httpHost="localhost" httpNtlmDomain="" httpPort="7819" httpProxyHost="" httpProxyPassword="#com.ghc.1!d600" httpProxyPort="" httpProxyUsername="" httpResourceRoot="" httpServerSocketBindAddressOverride="" httpServerSocketPortOverride="" httpSocketTimeout="" httpTimeoutResponseCode="503" httpVirtualHost="" useSsl="false" version="4">
+         <kerberos Anon="false" CStyle="Username / Password" Conf="false" Custom="true" Enabled="false" Integ="false" MutAuth="false" RepDet="false" SSO="false" SeqCheck="false"/>
+      </messageProperties>
+   </resourceConfig>
+</editableResource>

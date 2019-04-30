@@ -1,0 +1,4 @@
+grouping,status,cardType,newReservationNumber
+1,SUCCESS,americanexpress,A00023
+2,SUCCESS,maestro,A00025
+3,SUCCESS,visa,A00025

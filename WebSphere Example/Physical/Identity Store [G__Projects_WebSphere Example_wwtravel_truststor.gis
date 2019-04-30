@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1361647110018" createdUser="Chris" id="-12753bf1:13d087bd190:-7e72" selfDescribing="Identity Store [G:\Projects\WebSphere Example\wwtravel_truststore.jks]" type="identity_store_resource" updatedTimestamp="1361647110018" updatedUser="Chris" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig keystoreUrl="G:\Projects\WebSphere Example\wwtravel_truststore.jks" password="#com.ghc.1!58d7116155310CB86A4240E121127E16128E">
+      <KeyAliases entry0="cn=https proxy, ou=green hat software ltd, o=green hat software ltd, l=barbican, st=london, c=uk"/>
+      <KeyPasswords entry0="#com.ghc.1!8306"/>
+   </resourceConfig>
+</editableResource>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1542055133305" createdUser="c_hag" id="-795803ce:16709a5e7c4:-7e7e" selfDescribing="mask.noip.me (94.13.199.125)" type="host_machine_resource" updatedTimestamp="1542055133305" updatedUser="c_hag" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig host_address="94.13.199.125" user_host_name="mask.noip.me">
+      <roles>
+         <identity name="ssh" port="22"/>
+      </roles>
+   </resourceConfig>
+</editableResource>

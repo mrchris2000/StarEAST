@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1537953342890" createdUser="c_hag" id="-7f3cdfe0:1661527849e:-7e76" selfDescribing="File Access [SFTP PallasFTP mask.noip.me:115]" type="file_access_resource" updatedTimestamp="1537996273359" updatedUser="c_hag" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig host="mask.noip.me" identity="-7f3cdfe0:1661527849e:-7e4a" portOverride="115" protocol="SFTP" pw="#com.ghc.1!d20c" un="" useIdentity="true"/>
+</editableResource>

@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1538042359293" createdUser="c_hag" id="-70437da:1661a12c977:-7aa5" type="test_resource" updatedTimestamp="1538042615656" updatedUser="c_hag" version="1.1">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig description="" name="">
+      <testTree>
+         <editableResource id="-70437da:1661a12c977:-7a64" selfDescribing="Repeat test steps a number of times. Each iteration must be explicitly listed e.g. 1,5,7-12." type="repeat_action" version="1.0">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig description="" disableMappings="false" iterationContributor="false" maxIterationTime="0.0" maxIterationTimeExceededFailsTest="false" maxTotalIterationTime="0.0" maxTotalIterationTimeExceededFailsTest="false" name="1-5000" option="NOTHING" pacingtime="0.0" pacingtype="DELAY_BETWEEN_TESTS" performanceDisableValidation="false" performanceInstances="1" performanceInterleave="false" performanceMaximumIterationTime="0" performanceMaximumTestTime="0" performanceUseMaximumIterationTime="false" performanceUseMaximumTestTime="false" remoteAgent="" reportingLogIterations="1" reportingLogLogMessages="8" reportingLogMessages="4" reportingLogScriptExitCodes="8" reportingLogScriptOutput="8" reportingLogTagValues="8" reportingLogTimes="8" runSettingsContinueOnFail="true" runSettingsDelayEnabled="false" runSettingsDelayType="Fixed Delay" runSettingsIterations="1-5000" runSettingsMaximumDelayValue="0" runSettingsMinimumDelayValue="0" runSettingsRunFor="0" runSettingsRunType="Once Only" runSettingsTestDescription="" type="script:ECMAScript" useMaxIterationTime="false" useMaxTotalIterationTime="false" usepacing="false">
+               <mapper disableFiltersWhenEmpty="false" knownColumns="" noAutoMap=""/>
+               <testTree>
+                  <editableResource id="-70437da:1661a12c977:-7aa1" selfDescribing="Publish a message and wait for a response to be received.  This can then be validated accordingly." type="send_request_action" version="1.1">
+                     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                     <resourceConfig description="" formatter="mq_dynamic_msg_formatter" name="&quot;MQ Message&quot; using schema &quot;MQ Message&quot; via &quot;MQ Broker&quot;" transport="1b5ae254:1353467bacf:-7ecd">
+                        <headerMessage assocdefid="MQ Publish" meTy="Message" name="" sch="MQ Publish" type="12" version="1.2">
+                           <fieldActionGroup>
+                              <fieldAction enabled="false" type="1">
+                                 <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                              </fieldAction>
+                           </fieldActionGroup>
+                           <_c meTy="Message" name="GrpReport" sch="MQ Publish" type="12" version="1.2">
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                              <_c meTy="Integer" name="report" sch="MQ Publish" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="0" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="expiry" sch="MQ Publish" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="-1" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="String" name="replyQueue" sch="MQ Publish" type="7" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="vbooking.booking.reply" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="String" name="replyQueueMgr" sch="MQ Publish" type="7" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="QM_vbooking" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="feedback" sch="MQ Publish" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="0" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                           </_c>
+                           <_c meTy="Message" name="GrpIdentContext" sch="MQ Publish" type="12" version="1.2">
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                              <_c meTy="String" name="appIdData" sch="MQ Publish" type="7" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="                                " type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="ByteArray" name="accountingToken" sch="MQ Publish" type="14" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="0000000000000000000000000000000000000000000000000000000000000000" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="String" name="userId" sch="MQ Publish" type="7" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="db2admin    " type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                           </_c>
+                           <_c meTy="Message" name="GrpOriginContext" sch="MQ Publish" type="12" version="1.2">
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                              <_c meTy="String" name="appOriginData" sch="MQ Publish" type="7" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="    " type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                           </_c>
+                           <_c meTy="Message" name="GrpCoherence" sch="MQ Publish" type="12" version="1.2">
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                              <_c meTy="Integer" name="msgType" sch="MQ Publish" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="1" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="ByteArray" name="msgId" sch="MQ Publish" type="14" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="ByteArray" name="correlId" sch="MQ Publish" type="14" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="ByteArray" name="grpId" sch="MQ Publish" type="14" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="msgSeqNum" sch="MQ Publish" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="1" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="offset" sch="MQ Publish" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="0" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                           </_c>
+                           <_c meTy="Message" name="GrpConfig" sch="MQ Publish" type="12" version="1.2">
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                              <_c meTy="Integer" name="priority" sch="MQ Publish" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="4" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="persistence" sch="MQ Publish" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="0" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="msgFlags" sch="MQ Publish" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="0" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="encoding" sch="MQ Publish" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="273" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="charSet" sch="MQ Publish" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="1208" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="String" name="format" sch="MQ Publish" type="7" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="MQSTR   " type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                           </_c>
+                           <_c meTy="String" name="queueName" sch="MQ Publish" type="7" version="1.2">
+                              <fieldActionGroup>
+                                 <fieldAction type="0">
+                                    <fieldAction exp="vbooking.booking" type="0"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                           </_c>
+                           <_c meTy="String" name="queueManagerName" sch="MQ Publish" type="7" version="1.2">
+                              <fieldActionGroup>
+                                 <fieldAction type="0">
+                                    <fieldAction type="0"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                           </_c>
+                           <_c meTy="Message" name="Properties" sch="MQ Publish" type="12" version="1.2">
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                              <_c meTy="String" name="mcd.Msd" sch="MQ Publish" type="7" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="jms_text" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="String" name="JMSReplyTo" sch="MQ Publish" type="7" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="queue:///vbooking.booking.reply" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="String" name="com.greenhat.original.queue.name" sch="MQ Publish" type="7" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction type="0">
+                                       <fieldAction exp="vbooking.booking" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                           </_c>
+                        </headerMessage>
+                        <bodyMessage assocdefid="MQ Message" name="MQ Message" sch="MQ Message" type="12" version="1.2">
+                           <fieldActionGroup>
+                              <fieldAction enabled="false" type="1">
+                                 <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                              </fieldAction>
+                           </fieldActionGroup>
+                           <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="XML" sch="MQ Message" type="12" version="1.2">
+                              <fieldExpander fieldExpanderID="XML_EXPANDER" fieldSchema="-2372ff2c:135387d0e25:-7e04" fieldSchemaRoot="tns:bookFlightRequest">
+                                 <property name="XML.nullvalues" value="false"/>
+                                 <property name="XML.normalise" value="true"/>
+                                 <property name="XML.declaration" value="true"/>
+                                 <property name="XML.encoding" value="UTF-8"/>
+                                 <property name="Multi-line indented" value="Single line"/>
+                                 <property name="XML.xmlFormat" value="Single line"/>
+                                 <property name="XML.cdata" value="false"/>
+                                 <property name="XML.space" value="false"/>
+                              </fieldExpander>
+                              <contentTree>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ns0:bookFlightRequest xmlns:ns0="http://reservations.vbooking.com/schemas/BookFlightRequest"&gt;&lt;ns0:flightNumber&gt;VB297&lt;/ns0:flightNumber&gt;&lt;ns0:weekNumber&gt;49&lt;/ns0:weekNumber&gt;&lt;ns0:price&gt;100&lt;/ns0:price&gt;&lt;ns0:passengerFirstName&gt;David&lt;/ns0:passengerFirstName&gt;&lt;ns0:passengerMiddleName&gt;R&lt;/ns0:passengerMiddleName&gt;&lt;ns0:passengerLastName&gt;Thomson&lt;/ns0:passengerLastName&gt;&lt;ns0:passengerGender&gt;M&lt;/ns0:passengerGender&gt;&lt;ns0:passengerMealPref/&gt;&lt;ns0:payment&gt;&lt;payment:cardType xmlns:payment="http://reservations.vbooking.com/schemas/Payment"&gt;worldwide&lt;/payment:cardType&gt;&lt;payment:cardNumber xmlns:payment="http://reservations.vbooking.com/schemas/Payment"&gt;9480123456789011&lt;/payment:cardNumber&gt;&lt;payment:cardSecurityCode xmlns:payment="http://reservations.vbooking.com/schemas/Payment"&gt;111&lt;/payment:cardSecurityCode&gt;&lt;payment:cardHoldersName xmlns:payment="http://reservations.vbooking.com/schemas/Payment"&gt;David R Thomson&lt;/payment:cardHoldersName&gt;&lt;payment:addressLine1 xmlns:payment="http://reservations.vbooking.com/schemas/Payment"&gt;22 Uphill Street&lt;/payment:addressLine1&gt;&lt;payment:addressLine2 xmlns:payment="http://reservations.vbooking.com/schemas/Payment"&gt;GB London&lt;/payment:addressLine2&gt;&lt;payment:postcode xmlns:payment="http://reservations.vbooking.com/schemas/Payment"&gt;A1B2C3&lt;/payment:postcode&gt;&lt;/ns0:payment&gt;&lt;/ns0:bookFlightRequest&gt;<defaultActions>
+                                    <defaultMessageActions>
+                                       <fieldActionGroup>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" matching="PREFERENCE" type="101"/>
+                                          </fieldAction>
+                                          <fieldAction type="0">
+                                             <fieldAction type="100"/>
+                                          </fieldAction>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction enabled="false" type="5"/>
+                                          </fieldAction>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction enabled="false" type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                                          </fieldAction>
+                                       </fieldActionGroup>
+                                    </defaultMessageActions>
+                                    <defaultScalarActions>
+                                       <fieldActionGroup>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction enabled="false" type="0"/>
+                                          </fieldAction>
+                                          <fieldAction type="0">
+                                             <fieldAction type="0"/>
+                                          </fieldAction>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction enabled="false" type="5"/>
+                                          </fieldAction>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction enabled="false" type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                                          </fieldAction>
+                                       </fieldActionGroup>
+                                    </defaultScalarActions>
+                                 </defaultActions>
+                                 <updates>
+                                    <updateField path="/text/ns0:bookFlightRequest">
+                                       <_c assocdefid="tns:bookFlightRequest"/>
+                                    </updateField>
+                                 </updates>
+                              </contentTree>
+                              <fieldActionGroup>
+                                 <fieldAction type="0">
+                                    <fieldAction type="4"/>
+                                 </fieldAction>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="7"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                           </_c>
+                        </bodyMessage>
+                     </resourceConfig>
+                  </editableResource>
+                  <editableResource id="-70437da:1661a12c977:-7a9b" selfDescribing="Receive and validate a response to the request you have sent." type="receive_reply_action" version="1.1">
+                     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                     <resourceConfig description="" formatter="mq_dynamic_msg_formatter" name="&quot;MQ Message&quot; using schema &quot;MQ Message&quot;" sendRequestID="-70437da:1661a12c977:-7aa1" transport="1b5ae254:1353467bacf:-7ecd">
+                        <headerMessage assocdefid="MQ Receive Reply" meTy="Message" name="" sch="MQ Receive Reply" type="12" version="1.2">
+                           <fieldActionGroup>
+                              <fieldAction enabled="false" type="1">
+                                 <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                              </fieldAction>
+                           </fieldActionGroup>
+                           <_c meTy="Message" name="GrpCoherence" sch="MQ Receive Reply" type="12" version="1.2">
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                              <_c meTy="ByteArray" name="msgId" sch="MQ Receive Reply" type="14" version="1.2"/>
+                              <_c meTy="ByteArray" name="correlId" sch="MQ Receive Reply" type="14" version="1.2"/>
+                              <_c meTy="ByteArray" name="grpId" sch="MQ Receive Reply" type="14" version="1.2"/>
+                              <_c meTy="Integer" name="msgType" sch="MQ Receive Reply" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="8" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="8" type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="msgSeqNum" sch="MQ Receive Reply" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="1" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="1" type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="offset" sch="MQ Receive Reply" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="0" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="0" type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="origLength" sch="MQ Receive Reply" type="2" version="1.2"/>
+                           </_c>
+                           <_c meTy="Message" name="GrpConfig" sch="MQ Receive Reply" type="12" version="1.2">
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                              <_c meTy="Integer" name="priority" sch="MQ Receive Reply" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="4" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="4" type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="persistence" sch="MQ Receive Reply" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="0" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="0" type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="msgFlags" sch="MQ Receive Reply" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="0" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="0" type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="charSet" sch="MQ Receive Reply" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="1208" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="1208" type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="encoding" sch="MQ Receive Reply" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="273" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="273" type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                              <_c meTy="String" name="format" sch="MQ Receive Reply" type="7" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="MQSTR   " type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="MQSTR   " type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                              <_c meTy="String" name="dataPortionFormat" sch="MQ Receive Reply" type="7" version="1.2"/>
+                           </_c>
+                           <_c meTy="Message" name="GrpReport" sch="MQ Receive Reply" type="12" version="1.2">
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                              <_c meTy="Integer" name="report" sch="MQ Receive Reply" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="0" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="0" type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="expiry" sch="MQ Receive Reply" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="-1" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="-1" type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="feedback" sch="MQ Receive Reply" type="2" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="0" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="0" type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="backedOut" sch="MQ Receive Reply" type="2" version="1.2"/>
+                              <_c meTy="String" name="replyQueue" sch="MQ Receive Reply" type="7" version="1.2"/>
+                              <_c meTy="Boolean" name="replyQueueIsDynamic" sch="MQ Receive Reply" type="8" version="1.2"/>
+                              <_c meTy="String" name="replyQueueMgr" sch="MQ Receive Reply" type="7" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="QM_vbooking" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="QM_vbooking" type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                           </_c>
+                           <_c meTy="Message" name="GrpIdentContext" sch="MQ Receive Reply" type="12" version="1.2">
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                              <_c meTy="ByteArray" name="accountingToken" sch="MQ Receive Reply" type="14" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="0000000000000000000000000000000000000000000000000000000000000000" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="0000000000000000000000000000000000000000000000000000000000000000" type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                              <_c meTy="String" name="appIdData" sch="MQ Receive Reply" type="7" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="                                " type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="String" name="userId" sch="MQ Receive Reply" type="7" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="db2admin    " type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="db2admin    " type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                           </_c>
+                           <_c meTy="Message" name="GrpOriginContext" sch="MQ Receive Reply" type="12" version="1.2">
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                              <_c meTy="String" name="appOriginData" sch="MQ Receive Reply" type="7" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="    " type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                              </_c>
+                              <_c meTy="Integer" name="putAppType" sch="MQ Receive Reply" type="2" version="1.2"/>
+                              <_c meTy="String" name="putAppName" sch="MQ Receive Reply" type="7" version="1.2"/>
+                              <_c meTy="Date-Time" name="putDatTime" sch="MQ Receive Reply" type="11" version="1.2"/>
+                           </_c>
+                           <_c meTy="Message" name="Properties" sch="MQ Receive Reply" type="12" version="1.2">
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                              <_c meTy="String" name="mcd.Msd" sch="MQ Receive Reply" type="7" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="jms_text" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="jms_text" type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                              <_c meTy="String" name="com.greenhat.original.queue.name" sch="MQ Receive Reply" type="7" version="1.2">
+                                 <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="vbooking.booking.reply" type="0"/>
+                                    </fieldAction>
+                                 </fieldActionGroup>
+                                 <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                       <fieldAction enabled="false" exp="vbooking.booking.reply" type="0"/>
+                                    </fieldAction>
+                                 </filterActionGroup>
+                              </_c>
+                           </_c>
+                           <_c meTy="String" name="queueName" sch="MQ Receive Reply" type="7" version="1.2">
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" exp="vbooking.booking.reply" type="0"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                              <filterActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" exp="vbooking.booking.reply" type="0"/>
+                                 </fieldAction>
+                              </filterActionGroup>
+                           </_c>
+                           <_c meTy="Date-Time" name="rcvdTimestamp" sch="MQ Receive Reply" type="11" version="1.2"/>
+                        </headerMessage>
+                        <subconfig _version="1.1" formatter="mq_dynamic_msg_formatter" transport="1b5ae254:1353467bacf:-7ecd"/>
+                        <bodyMessage assocdefid="MQ Message" name="MQ Message" sch="MQ Message" type="12" version="1.2">
+                           <fieldActionGroup>
+                              <fieldAction type="1">
+                                 <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                              </fieldAction>
+                           </fieldActionGroup>
+                           <_c coreTypeInt="7" coreTypeName="String" name="text" nodeFormatter="XML" sch="MQ Message" type="12" version="1.2">
+                              <fieldExpander fieldExpanderID="XML_EXPANDER" fieldSchema="-2372ff2c:135387d0e25:-7e03" fieldSchemaRoot="tns:bookFlightResponse">
+                                 <property name="XML.nullvalues" value="false"/>
+                                 <property name="XML.normalise" value="true"/>
+                                 <property name="XML.declaration" value="true"/>
+                                 <property name="XML.encoding" value="UTF-8"/>
+                                 <property name="Multi-line indented" value="Single line"/>
+                                 <property name="XML.xmlFormat" value="Single line"/>
+                                 <property name="XML.cdata" value="false"/>
+                                 <property name="XML.space" value="false"/>
+                              </fieldExpander>
+                              <contentTree>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;bookFlightResponse xmlns="http://reservations.vbooking.com/schemas/BookFlightResponse"&gt;&lt;status&gt;SUCCESS&lt;/status&gt;&lt;newReservationNumber&gt;A00014&lt;/newReservationNumber&gt;&lt;/bookFlightResponse&gt;<defaultActions>
+                                    <defaultMessageActions>
+                                       <fieldActionGroup>
+                                          <fieldAction type="1">
+                                             <fieldAction anyOrder="false" ignoreExtra="false" ignoreNonPresent="false" matching="PREFERENCE" type="101"/>
+                                          </fieldAction>
+                                          <fieldAction type="1">
+                                             <fieldAction type="5"/>
+                                          </fieldAction>
+                                          <fieldAction type="1">
+                                             <fieldAction type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                                          </fieldAction>
+                                       </fieldActionGroup>
+                                    </defaultMessageActions>
+                                    <defaultScalarActions>
+                                       <fieldActionGroup>
+                                          <fieldAction type="1">
+                                             <fieldAction type="0"/>
+                                          </fieldAction>
+                                          <fieldAction type="1">
+                                             <fieldAction type="5"/>
+                                          </fieldAction>
+                                          <fieldAction type="1">
+                                             <fieldAction type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                                          </fieldAction>
+                                       </fieldActionGroup>
+                                    </defaultScalarActions>
+                                 </defaultActions>
+                                 <updates>
+                                    <updateField path="/text/bookFlightResponse">
+                                       <_c assocdefid="tns:bookFlightResponse"/>
+                                    </updateField>
+                                    <setAction index="0" path="/text/bookFlightResponse/newReservationNumber/{}" replaceActionType="0" replaceOuterType="1">
+                                       <fieldAction enabled="false" type="1">
+                                          <fieldAction enabled="false" exp="A00014" type="0"/>
+                                       </fieldAction>
+                                    </setAction>
+                                 </updates>
+                              </contentTree>
+                              <fieldActionGroup>
+                                 <fieldAction type="1">
+                                    <fieldAction type="7"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                           </_c>
+                        </bodyMessage>
+                     </resourceConfig>
+                  </editableResource>
+                  <editableResource id="-70437da:1661a12c977:-7724" selfDescribing="Suspend execution of the test for a specified period (in milliseconds).  The delay may be fixed or random." type="sleep_action" version="1.0">
+                     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                     <resourceConfig description="" distributionType="2" maxDelay="2500" minDelay="500" name="for between 500 - 2500ms, Gaussian"/>
+                  </editableResource>
+               </testTree>
+            </resourceConfig>
+         </editableResource>
+      </testTree>
+      <tagDataStore inputMode="NONE" outputMode="NONE"/>
+      <testprops messageClearance="false"/>
+   </resourceConfig>
+</editableResource>

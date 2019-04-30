@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1328093551287" createdUser="Chris" id="-2372ff2c:135387d0e25:-7e02" selfDescribing="Payment" type="xsd_schema" updatedTimestamp="1537872097796" updatedUser="c_hag" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig schemaSourceTemplateName="XSD">
+      <schemaSourceConfig sourceType="101" uri="D:\Projects\schemas\XSD\Payment.xsd"/>
+   </resourceConfig>
+</editableResource>

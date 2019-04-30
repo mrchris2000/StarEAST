@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><ImportProfile exampleFilePath="%%PROJECT/ROOT_DIRECTORY%%/ExampleRecordLayoutDefinition-New.xlsx" name="ExampleRecordLayoutProfile" type="excel">
+   <Rules>
+      <Rule action="START" expression="^ExampleSheet" match="true" stopAfterMatch="false">
+         <SourceOfContent content="SHEET_NAME" type="fixed"/>
+         <Translations type="string"/>
+      </Rule>
+      <Rule action="GROUPING" expression="^(ExampleSheet)" match="true" stopAfterMatch="false">
+         <SourceOfContent content="SHEET_NAME" type="fixed"/>
+         <Translations type="string"/>
+      </Rule>
+      <Rule action="SCHEMA_NAME" expression="^ExampleSheet" match="true" stopAfterMatch="true">
+         <SourceOfContent content="SHEET_NAME" type="fixed"/>
+         <Translations type="string"/>
+      </Rule>
+      <Rule action="NAME_COLUMN" expression="^Field Name" match="true" stopAfterMatch="true">
+         <SourceOfContent content="A" type="column"/>
+         <Translations type="string"/>
+      </Rule>
+      <Rule action="GROUPING" expression="(.*[a-zA-Z0-9]+[^Group Name])" match="true" stopAfterMatch="false">
+         <SourceOfContent content="B" type="column"/>
+         <Translations type="string"/>
+      </Rule>
+      <Rule action="INCLUSION_COLUMN" expression="^Mandatory / Optional" match="true" stopAfterMatch="true">
+         <SourceOfContent content="D" type="column"/>
+         <Translations type="string"/>
+      </Rule>
+      <Rule action="TYPE_COLUMN" expression="^Type" match="true" stopAfterMatch="true">
+         <SourceOfContent content="E" type="column"/>
+         <Translations type="string"/>
+      </Rule>
+      <Rule action="LENGTH_COLUMN" expression="^Length" match="true" stopAfterMatch="true">
+         <SourceOfContent content="F" type="column"/>
+         <Translations type="string"/>
+      </Rule>
+      <Rule action="RUN_COLUMN_MAPPINGS" expression="(.+)" match="true" stopAfterMatch="true">
+         <SourceOfContent content="A" type="column"/>
+         <Translations type="string"/>
+      </Rule>
+   </Rules>
+</ImportProfile>

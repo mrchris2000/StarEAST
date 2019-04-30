@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1328026226117" createdUser="Chris" id="4a697be:135347bd538:-7df2" selfDescribing="IBM WebSphere Application Server localhost:8880" type="mq_app_server" updatedTimestamp="1537979669975" updatedUser="c_hag" version="2.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig hostname="localhost" name="" password="#com.ghc.1!57ca" soap_port="8880" useSsl="false" username=""/>
+</editableResource>

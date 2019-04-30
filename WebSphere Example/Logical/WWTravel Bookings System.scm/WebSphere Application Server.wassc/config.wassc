@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1388747914350" createdUser="Chris" id="-47901902:14357d2538b:-7e89" selfDescribing="IBM WebSphere Application Server" type="was_service_component" updatedTimestamp="1388747914350" updatedUser="Chris" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+</editableResource>

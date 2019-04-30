@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1328202574390" createdUser="Chris" id="2967848d:1353ecf2a56:-7988:1220038982:1544155186" selfDescribing="http localhost:9080 " type="http_transport" updatedTimestamp="1537958245663" updatedUser="c_hag" version="1.0">
+   <syncdetails compare="http localhost:8089 " lastSynced="1328202574390" sourceid="2967848d:1353ecf2a56:-7988">
+      <sourcepath path="HotelFinderService/HotelFinder"/>
+   </syncdetails>
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig transportName="" transportTemplateName="HTTP">
+      <messageProperties ReasonPhrase="Service unavailable" clientConnectionsPerHost="100" credDomain="" credPassword="#com.ghc.1!232a" credPreemptive="false" credType="0" credUser="" httpHost="localhost" httpNtlmDomain="" httpPort="9080" httpProxyHost="" httpProxyPassword="#com.ghc.1!7f4e" httpProxyPort="" httpProxyUsername="" httpResourceRoot="" httpServerSocketBindAddressOverride="" httpServerSocketPortOverride="" httpSocketTimeout="" httpTimeoutResponseCode="503" httpVirtualHost="" recType="PROXY" useSsl="false" version="4">
+         <kerberos Anon="false" Conf="false" Custom="true" Enabled="false" Integ="false" KDC="" Loc="" MutAuth="false" Principal="" Pwd="#com.ghc.1!6636" Realm="" RepDet="false" SSO="false" SeqCheck="false"/>
+         <serverAuthentication>
+            <authenticationConfig enabled="false" realm="" type="1"/>
+            <authenticationConfig algorithm="" authParams="" domain="" enabled="false" nonce="false" opaque="" qop="" realm="" stale="" type="2"/>
+            <authenticationConfig enabled="false" type="3"/>
+            <authenticationConfig enabled="false" type="5"/>
+         </serverAuthentication>
+      </messageProperties>
+   </resourceConfig>
+</editableResource>

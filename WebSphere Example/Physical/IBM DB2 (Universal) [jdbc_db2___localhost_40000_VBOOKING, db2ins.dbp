@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1328025494527" createdUser="Chris" id="4a697be:135347bd538:-7eb7" selfDescribing="IBM DB2 (Universal) [jdbc:db2://localhost:40000/VBOOKING, db2inst1]" type="database_connection_resource" updatedTimestamp="1537979422707" updatedUser="c_hag" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig maxConnections="1" poolName="DefaultPoolName" transportName="">
+      <connectionParams CICSEnv="false" MVSEnv="false" ZOSEnv="false" driverClass="com.ibm.db2.jcc.DB2Driver" password="#com.ghc.1!dab521087E1112924AC2446EE34EA2E47276113C55330CAA6A55" recordFilters="" schema="" url="jdbc:db2://localhost:40000/VBOOKING" user="db2inst1">
+         <stubSettings maxProcCallCount="10000" maxResultSetRowCount="10000" maxRowCount="10000" password="#com.ghc.1!f89040E4211C7E4112AB4AC44477E353A2FF7270117D" procedureLearningBehaviour="1" schema="DB2VIRTUAL" url="jdbc:db2://gvm-presales1:50000/VIRTUAL" useIntegratedDB="false" user="db2Virtual"/>
+         <storedProcedureFilter catalogFilterEnabled="false" catalogFilterPattern="" procedureFilterEnabled="false" procedureFilterPattern="" schemaFilterEnabled="true" schemaFilterPattern="" storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
+         <timestampFormatting timestampFormatZero="false" timestampFormattingEnabled="false" timestampPrecision="9"/>
+      </connectionParams>
+   </resourceConfig>
+</editableResource>

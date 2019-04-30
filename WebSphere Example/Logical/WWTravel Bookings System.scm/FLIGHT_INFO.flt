@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1537953646015" createdUser="c_hag" id="-7f3cdfe0:1661527849e:-7e03" selfDescribing="A File located somewhere" type="file_contents_transport" updatedTimestamp="1537976142046" updatedUser="c_hag" version="1.0">
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig transportName="" transportTemplateName="File">
+      <_c directory="/Shared/Temp" encoding="UTF-8" fileNamePattern="*.txt" ignoreLastModification="false" lastModificationDelay="0" newLineChoice="Native" packetiserType="AllAvailableBytes" writeEnabled="false"/>
+   </resourceConfig>
+</editableResource>

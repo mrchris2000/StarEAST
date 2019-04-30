@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1542116705638" createdUser="c_hag" id="6df487df:1670c4fbcc9:-7c6d:-170606544:1544155186" selfDescribing="http tomcat:8090 " type="http_transport" updatedTimestamp="1542116705638" updatedUser="c_hag" version="1.0">
+   <syncdetails compare="http tomcat:8090 " lastSynced="1542116705638" sourceid="6df487df:1670c4fbcc9:-7c6d">
+      <sourcepath path="HotelFinderService/HotelFinder"/>
+   </syncdetails>
+   <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+   <resourceConfig transportName="" transportTemplateName="HTTP">
+      <messageProperties ReasonPhrase="No Stub available that matches the request" clientConnectionsPerHost="100" credDomain="" credPassword="#com.ghc.1!c5b6" credPreemptive="false" credType="0" credUser="" httpHost="tomcat" httpNtlmDomain="" httpPort="8090" httpProxyHost="" httpProxyPassword="#com.ghc.1!67ea" httpProxyPort="" httpProxyUsername="" httpResourceRoot="" httpServerSocketBindAddressOverride="" httpServerSocketPortOverride="" httpSocketTimeout="" httpTimeoutResponseCode="503" httpVirtualHost="" useSsl="false" version="4">
+         <kerberos Anon="false" CStyle="Username / Password" Conf="false" Custom="true" Enabled="false" Integ="false" MutAuth="false" RepDet="false" SSO="false" SeqCheck="false"/>
+      </messageProperties>
+   </resourceConfig>
+</editableResource>

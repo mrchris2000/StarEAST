@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><editableResource createdTimestamp="1537988366221" createdUser="c_hag" id="196debaf:166173c9ffa:-7e5f" type="stub_resource" updatedTimestamp="1537988432783" updatedUser="c_hag" version="1.1">
+   <loggingConfiguration debug="true" writeStubEventsToDB="true"/>
+   <resourceConfig description="" name="">
+      <testTree>
+         <editableResource id="196debaf:166173c9ffa:-7e5d" selfDescribing="Configure a subscriber to pick up a message that can be passed to the child Case Actions" type="message_switch_action" version="1.0">
+            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+            <resourceConfig description="" formatter="com.ghc.a3.RawByteArrayMessageFormatter" name="to file &quot;Defined in the Logical View&quot; via &quot;FLIGHT_INFO&quot;" src="196debaf:166173c9ffa:-7e88" transport="-7f3cdfe0:1661527849e:-7e03">
+               <settings _version="1.1" deleteAfterProcessing="false" fileName="" ignoreExisting="false" retryInterval="10000"/>
+               <cases>
+                  <editableResource id="196debaf:166173c9ffa:-7e57" selfDescribing="Configure the filtering and validation for this Case action" type="message_case_action" version="1.0">
+                     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                     <resourceConfig description="" name="using schema &quot;Bytes&quot;">
+                        <FilterExpressions option="NOTHING" type="script:ECMAScript"/>
+                        <bodyfilters assocdefid="RawByteArray" name="" sch="Bytes" type="12" version="1.2">
+                           <fieldActionGroup>
+                              <fieldAction enabled="false" type="1">
+                                 <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                              </fieldAction>
+                           </fieldActionGroup>
+                           <_c coreTypeInt="14" coreTypeName="ByteArray" name="data" nodeFormatter="byte_array_encoding_node_formatter" sch="Bytes" type="12" version="1.2">
+                              <fieldExpander fieldExpanderID="byte_array_encoding_fieldexpander" fieldSchema="ByteArrayInline" fieldSchemaRoot="ByteArray">
+                                 <property name="byte_array_eol_pref" value="Native"/>
+                                 <property name="byte_array_encoding_property" value=""/>
+                              </fieldExpander>
+                              <contentTree>
+                                 <defaultActions>
+                                    <defaultMessageActions>
+                                       <fieldActionGroup>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                                          </fieldAction>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction enabled="false" type="5"/>
+                                          </fieldAction>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction enabled="false" type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                                          </fieldAction>
+                                       </fieldActionGroup>
+                                    </defaultMessageActions>
+                                    <defaultScalarActions>
+                                       <fieldActionGroup>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction enabled="false" type="0"/>
+                                          </fieldAction>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction enabled="false" type="5"/>
+                                          </fieldAction>
+                                          <fieldAction enabled="false" type="1">
+                                             <fieldAction enabled="false" type="6" typeActionAllType="true" typeActionMetaType="false"/>
+                                          </fieldAction>
+                                       </fieldActionGroup>
+                                    </defaultScalarActions>
+                                 </defaultActions>
+                                 <updates>
+                                    <updateField path="/data/{}">
+                                       <_c assocdefid="ByteArray"/>
+                                    </updateField>
+                                    <setAction index="0" path="/data/{}/data">
+                                       <fieldAction description="Store copy of field 'data' in tag 'data'" tN="data" type="2">
+                                          <dataAction type="Copy"/>
+                                       </fieldAction>
+                                    </setAction>
+                                 </updates>
+                              </contentTree>
+                              <fieldActionGroup>
+                                 <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="7"/>
+                                 </fieldAction>
+                              </fieldActionGroup>
+                           </_c>
+                        </bodyfilters>
+                        <headerfilters assocdefid="File Subscribe" meTy="Message" name="" sch="File Subscribe" type="12" version="1.2">
+                           <fieldActionGroup>
+                              <fieldAction enabled="false" type="1">
+                                 <fieldAction anyOrder="false" enabled="false" ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                              </fieldAction>
+                           </fieldActionGroup>
+                           <_c meTy="Date-Time" name="rcvdTimestamp" sch="File Subscribe" type="11" version="1.2"/>
+                           <_c meTy="String" name="directory" sch="File Subscribe" type="7" version="1.2"/>
+                           <_c meTy="String" name="fileName" sch="File Subscribe" type="7" version="1.2"/>
+                           <_c meTy="String" name="fullPath" sch="File Subscribe" type="7" version="1.2"/>
+                           <_c meTy="Date-Time" name="lastModified" sch="File Subscribe" type="11" version="1.2"/>
+                           <_c meTy="Long" name="fileSize" sch="File Subscribe" type="3" version="1.2"/>
+                           <_c meTy="Long" name="messageNumber" sch="File Subscribe" type="3" version="1.2"/>
+                           <_c meTy="Long" name="messageSize" sch="File Subscribe" type="3" version="1.2"/>
+                           <_c meTy="Boolean" name="finalMessage" sch="File Subscribe" type="8" version="1.2"/>
+                        </headerfilters>
+                        <childActions>
+                           <editableResource id="196debaf:166173c9ffa:-7d91" selfDescribing="The log actions enables you to output messages to console and a logging file." type="logging_action" version="1.0">
+                              <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                              <resourceConfig append="true" description="" flush="true" loggingMessage="%%data%%" name="%%data%%" outputFile="" role="0"/>
+                           </editableResource>
+                        </childActions>
+                     </resourceConfig>
+                  </editableResource>
+                  <editableResource id="196debaf:166173c9ffa:-7e5c" type="default_case_action" version="1.0">
+                     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                     <resourceConfig description="" name=" (2)"/>
+                  </editableResource>
+               </cases>
+            </resourceConfig>
+         </editableResource>
+      </testTree>
+      <tagDataStore identifier="196debaf:166173c9ffa:-7e08" inputMode="NONE" outputMode="NONE">
+         <tag defaultValue="" description="" name="data"/>
+      </tagDataStore>
+      <testprops messageClearance="false"/>
+      <stubprops behaviourStyle="ONE_TO_ONE" majorVersion="1" messageClearance="false" minorVersion="0" optimise="false" wrks="10">
+         <responseTimeTable>
+            <entry key="196debaf:166173c9ffa:-7e88">
+               <value type="NO_DELAY"/>
+            </entry>
+         </responseTimeTable>
+         <environmentTasks preventExecutionOnFailure="false"/>
+      </stubprops>
+      <Session mode="NONE"/>
+   </resourceConfig>
+</editableResource>
