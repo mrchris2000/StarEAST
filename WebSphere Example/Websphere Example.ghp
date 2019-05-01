@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><_c buildID="20120131093820_22671" certificateAuthority="KEY_1024_BITS" comments="Project created on Jan 31, 2012" creationVersion="5.4.0" domain="Demo" extDocPrefix="" name="Websphere Example" owner="Chris" rulesCacheUri="%%PROJECT/ROOT%%Rules" uuid="00000135-346c-d73f-0000-0d65da9dd4eb">
+   <rootEnvironmentConfig isOverridingSecretsNamespace="false"/>
    <dateTimeConfig date="yyyy/MM/dd" dateTime="dd-MMM-yyyy HH:mm:ss" time="HH:mm:ss.SSS"/>
-   <serverSettings autoPublishing="true" ghRepositoryURL="http://localhost:7819/RTCP" publishedProject="1" trustSource="TRUST_ALL" trustStorePath="">
+   <serverSettings ghRepositoryURL="http://localhost:7819/RTCP" trustSource="TRUST_ALL" trustStorePath="">
       <dbConnectionParameters maxConnections="1" poolName="DefaultPoolName">
-         <connectionParams CICSEnv="false" MVSEnv="false" ZOSEnv="false" driverClass="com.ibm.db2.jcc.DB2Driver" password="#com.ghc.1!d1bdE351A2E8727E117E55280CB46A5F40E721537E03128A4AC9" recordFilters="" url="jdbc:db2://localhost:40000/VRESULTS" user="db2inst1">
-            <stubSettings maxProcCallCount="10000" maxResultSetRowCount="10000" maxRowCount="10000" password="#com.ghc.1!4b30" procedureLearningBehaviour="1" schema="" url="" useIntegratedDB="true" user=""/>
+         <connectionParams CICSEnv="false" MVSEnv="false" ZOSEnv="false" driverClass="com.ibm.db2.jcc.DB2Driver" password="#com.ghc.1!b5c14473E345A2E5727E117A552A0CB36A5640AD210E7E041299" recordFilters="" url="jdbc:db2://vbdatabase:50000/VRESULTS" user="db2inst1">
+            <stubSettings maxProcCallCount="10000" maxResultSetRowCount="10000" maxRowCount="10000" password="#com.ghc.1!f551" procedureLearningBehaviour="1" schema="" url="" useIntegratedDB="true" user=""/>
             <storedProcedureFilter catalogFilterEnabled="false" catalogFilterPattern="" procedureFilterEnabled="false" procedureFilterPattern="" schemaFilterEnabled="true" schemaFilterPattern="db2inst1" storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
             <timestampFormatting timestampFormatZero="false" timestampFormattingEnabled="false" timestampPrecision="9"/>
          </connectionParams>
       </dbConnectionParameters>
+      <automationServer enabled="false" hostname="" port="443" projectId="-1" projectName="--No Project Selected--" publishResults="false" trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!0a42" trustStorePath=""/>
    </serverSettings>
    <permissionsSettings autoLogin="true" host="GVM-PRESALES1" permFactId="ldap.permissions.factory.none" port="389" pswd="2jmj7l5rSw0yVb/vlWAYkK/YBwk="/>
    <changeManagement>
